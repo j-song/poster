@@ -1,0 +1,118 @@
+  \documentclass[final]{beamer} % beamer 3.10: do NOT use option hyperref={pdfpagelabels=false} !
+  %\documentclass[final,hyperref={pdfpagelabels=false}]{beamer} % beamer 3.07: get rid of beamer warnings
+  \mode<presentation> {  %% check http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php for examples
+    \usetheme{Berlin}    %% you should define your own theme e.g. for big headlines using your own logos 
+   \setbeamercovered{transparent}
+  }
+  \usepackage[english]{babel}
+  \usepackage[latin1]{inputenc}
+  \usepackage{amsmath,amsthm, amssymb, latexsym}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\usepackage{fix-cm}
+  %\usepackage{times}\usefonttheme{professionalfonts}  % times is obsolete
+  \usefonttheme[onlymath]{serif}
+  \boldmath
+  %\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}                       % e.g. for DIN-A0 poster
+  %\usepackage[orientation=portrait,size=a1,scale=1.4,grid,debug]{beamerposter}                  % e.g. for DIN-A1 poster, with optional grid and debug output
+  \usepackage[size=custom,width=200,height=160,scale=1.4,debug]{beamerposter}                     % e.g. for custom size poster
+  %\usepackage[orientation=portrait,size=a0,scale=1.0,printer=rwth-glossy-uv.df]{beamerposter}   % e.g. for DIN-A0 poster with rwth-glossy-uv printer check
+  % ...
+  %
+  \title[]{{\fontsize{240}{240}\selectfont Title}}
+  \author[]{Philippe Dreuw and Thomas Deselaers}
+  \institute[RWTH Aachen University]{Human Language Technology and Pattern Recognition,RWTH Aachen University}
+  \date{Jul. 31th, 2007}
+  \begin{document}
+  \begin{frame}{}
+  \maketitle
+    \begin{columns}[T]
+      \begin{column}{0.3\linewidth}
+    \begin{block}{\Huge Introduction}
+    \Large
+    Rare genetic disorders are caused by abnormalities in human genome. Due to different levels of expressions and influences from the environment, even patients with the same disorder may exhibit varying symptoms, which is a challenge for accurate diagnosis. However, clustering multiple patients with similar symptoms and utilizing the structural information in ontologies, we can uncover more information from patients.
+   \vspace{3cm}
+
+    \end{block}
+    
+    \begin{block}{\Huge Motivation}
+    \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+   \centering
+  \includegraphics[width = \textwidth, height=40cm ]{hpo}
+      \end{column}
+      
+      \begin{column}{.5\textwidth}
+	    \Large
+        \begin{itemize}
+          \item
+          HPO (Human Phenotype Ontology) provides structural information about phenotypes
+          \item
+          OMIM (Online Mendelian Inheritance in Man) annotates disorders with HPO terms
+          \item 
+          These two resources enable us to develop more informed algorithms to analyse patients
+      \end{itemize}  
+      \vspace{5cm}
+      \end{column}
+    \end{columns}
+
+    \end{block}
+    \begin{block}{\Huge Objective}
+     \begin{itemize}
+    \Large
+     \item
+     Cluster patients with similar phenotypes
+    \item
+    Perform diagnoses on patients
+     \end{itemize}
+      \end{block}
+    \end{column}
+
+    \begin{column}{0.3\linewidth}
+    \begin{block}{\Huge Methods}
+
+     \begin{block}{\LARGE Clustering Method}
+     \Large Cluster Method
+     \end{block}
+     \vspace{3cm}
+     \begin{block}{\LARGE Diagnosis Method}
+     \Large
+     \begin{itemize}
+     \item
+     The objective is to measure how close a patient is to the canonical form of a disorder
+     \item
+     Establish an one-to-one matching between the set of patient's phenotypes and annotations of a disorder
+    \item
+    The cost of transforming from the real patient to the canonical patient is the measure for closeness
+         \end{itemize}
+   \vspace{3cm}
+   \centering
+   \includegraphics[width=.9\textwidth]{toy_ontology}
+   \\
+   \normalsize
+   Figure 1: A Toy Ontology Example
+     \end{block}
+    \end{block}
+
+    \end{column}
+
+    \begin{column}{0.3\linewidth}
+    \begin{block}{\Huge }
+      \centering
+\includegraphics[width=0.7\textwidth]{cluster_comparison.png} \\
+   Figure 2: Comparisons of Different Clustering Methods
+
+    \end{block}
+
+    \begin{block}{\large blah}
+
+\centering
+\includegraphics[width=.7\textwidth ]{sim_patients}
+   \\
+   Figure 3: Diagnoses Results for 1498 Simulated Patients
+      \end{block}
+    \end{column}
+    \end{columns}
+  \end{frame}
+  \end{document}

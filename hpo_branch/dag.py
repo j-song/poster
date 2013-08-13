@@ -1,0 +1,11 @@
+from subprocess import call
+import networkx as nx
+import matplotlib.pyplot as plt
+import hpo_data
+G = nx.DiGraph()
+codes = ['HP:0000154'] #terms to display
+nodes = sum(map(lambda code: list(hpo_data.code_to_term[code].get_ancestors()), codes),[])
+map(lambda n: map(lambda x: G.add_edge(n.name,x.name), filter(lambda x: x in nodes, n.children)), nodes)
+
+nx.write_dot(G, 'hpo_branch.dot')
+call("dot -Tpng hpo_branch.dot > hpo_branch.png", shell=True)

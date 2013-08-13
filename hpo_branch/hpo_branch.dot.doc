@@ -1,0 +1,31 @@
+strict digraph  {
+	Immunodeficiency -> "Hepatic abscesses due to immunodeficiency";
+	"Abnormality of the skeletal system" -> "Abnormality of skeletal morphology";
+	"Joint dislocation" -> "Hip dislocation";
+	"Hip dislocation" -> "Congenital hip dislocation";
+	"Abnormality of the immune system" -> "Abnormality of immune system physiology";
+	"Liver abscess" -> "Hepatic abscesses due to immunodeficiency";
+	"Abnormality of the hip joint" -> "Hip dislocation";
+	"Recurrent infections" -> "Recurrent abscess formation";
+	"Abnormality of pelvic girdle bone morphology" -> "Abnormality of the hip bone";
+	"Abnormal appendicular skeleton morphology" -> "Abnormality of limb bone morphology";
+	"Abnormal appendicular skeleton morphology" -> "Abnormality of pelvic girdle bone morphology";
+	"Recurrent abscess formation" -> "Liver abscess";
+	"Abnormal joint morphology" -> "Abnormality of the joints of the lower limbs";
+	"Abnormal joint morphology" -> "Joint dislocation";
+	"Abnormality of the lower limb" -> "Abnormality of the joints of the lower limbs";
+	"Abnormality of the liver" -> "Liver abscess";
+	"Abnormality of the hip bone" -> "Abnormality of the hip joint";
+	All -> "Phenotypic abnormality";
+	"Abnormality of the abdominal organs" -> "Abnormality of the liver";
+	"Phenotypic abnormality" -> "Abnormality of the immune system";
+	"Phenotypic abnormality" -> "Abnormality of the skeletal system";
+	"Phenotypic abnormality" -> "Abnormality of the abdomen";
+	"Abnormality of the joints of the lower limbs" -> "Abnormality of the hip bone";
+	"Abnormality of immune system physiology" -> Immunodeficiency;
+	"Abnormality of immune system physiology" -> "Recurrent infections";
+	"Abnormality of the abdomen" -> "Abnormality of the abdominal organs";
+	"Abnormality of skeletal morphology" -> "Abnormal joint morphology";
+	"Abnormality of skeletal morphology" -> "Abnormal appendicular skeleton morphology";
+	"Abnormality of limb bone morphology" -> "Abnormality of the lower limb";
+}

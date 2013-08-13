@@ -1,0 +1,97 @@
+\frametitle {}\begin {columns}[T]
+      \begin{column}{0.3\linewidth}
+    \begin{block}{\Huge Introduction}
+    \Large
+    Rare genetic disorders are caused by abnormalities in human genome. Due to different levels of expressions and influences from the environment, even patients with a same disorder may exhibit varying symptoms, which poses a challenge for accurate diagnosis. However, clustering multiple patients with similar symptoms and utilizing the structural information in ontologies, we can uncover more information from patients.
+   \vspace{5cm}
+
+    \end{block}
+
+    \begin{block}{\Huge Motivation}
+    \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+   \centering
+  \includegraphics[width = \textwidth, height=40cm ]{hpo}
+      \end{column}
+
+      \begin{column}{.5\textwidth}
+    \Large
+        \begin{itemize}
+          \item
+          HPO (Human Phenotype Ontology) provides structural information about phenotypes
+          \item
+          OMIM (Online Mendelian Inheritance in Man) annotates disorders with HPO terms
+          \item
+          These two resources enable us to develop more informed algorithms to analyse patients
+      \end{itemize}
+     \vspace{5cm}
+      \end{column}
+    \end{columns}
+
+    \end{block}
+    \begin{block}{\Huge Objective}
+     \begin{itemize}
+    \Large
+     \item
+     Cluster patients with similar phenotypes
+    \item
+    Perform diagnoses on patients
+    \item
+    Identify phenotypes that can efficiently differentiate similar disorders
+     \end{itemize}
+      \end{block}
+    \end{column}
+
+    \begin{column}{0.3\linewidth}
+    \begin{block}{\Huge Methods}
+
+     \begin{block}{\LARGE Clustering Method}
+     \Large Cluster Method
+     \end{block}
+     \vspace{3cm}
+     \begin{block}{\LARGE Diagnosis Method}
+     \Large
+     \begin{itemize}
+     \item
+     The objective is to measure how close a patient is to the canonical form of a disorder
+     \item
+     Establish an one-to-one matching between the set of patient's phenotypes and annotations of a disorder
+    \item
+    The cost of transforming from the real patient to the canonical patient is the measure for closeness
+         \end{itemize}
+    \tikzset{
+  treenode/.style = {align=center, inner sep=0pt, text centered,
+    font=\sffamily},
+  arn_n/.style = {treenode, circle, black, draw=black,
+     text width=1.5em},% arbre rouge noir, noeud noir
+  arn_r/.style = {treenode, circle, red, draw=red,
+    text width=1.5em, very thick},% arbre rouge noir, noeud rouge
+  arn_a/.style = {treenode, circle, blue, draw=blue,
+    text width = 1.5em, very thick},
+}
+
+    \begin{tikzpicture}[->,>=stealth',level/.style={sibling distance = 2.3cm/#1,
+  level distance = 1.3cm}]
+\node [arn_n] {1}
+    child{ node [arn_n] {2}
+            child{ node [arn_a] {3} {
+child {node [arn_n] {6}}
+  }
+   }
+            child{ node [arn_n] {4} {
+child{ node [arn_r] {7}}
+            }
+    }
+    child{ node [arn_a] {5}
+            child{ node [arn_r] {8}}
+}
+}
+;
+\end{tikzpicture}
+
+     \end{block}
+    \end{block}
+
+    \end{column}
+
+    \begin{column}{0.3\linewidth}

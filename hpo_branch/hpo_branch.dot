@@ -1,0 +1,9 @@
+strict digraph  {
+	"Abnormality of the face" -> "Abnormality of the mouth";
+	All -> "Phenotypic abnormality";
+	"Phenotypic abnormality" -> "Abnormality of head and neck";
+	"Abnormality of the head" -> "Abnormality of the face";
+	"Abnormality of head and neck" -> "Abnormality of the head";
+	"Abnormality of mouth size" -> "Wide mouth";
+	"Abnormality of the mouth" -> "Abnormality of mouth size";
+}
