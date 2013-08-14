@@ -69,13 +69,29 @@
     \end{column}
 
     \begin{column}{0.3\linewidth}
-    \begin{block}{\Huge Methods}
+     \begin{block}{\Huge Clustering Methods}
+     \Large
+		\begin{block}{\Large Patient-Patient similarity metrics}
+			Define a patient-patient similarity metric, and then apply a standard clustering algorithm (e.g. spectral clustering).
 
-     \begin{block}{\LARGE Clustering Method}
-     \Large Cluster Method
+			Examples of similarity metrics:
+			\begin{itemize}
+				\item Euclidean Metric: Count number of shared traits between two patients.
+				\item Information Metric: Essentially, count shared traits weighted by their rarities. Patients sharing rarer traits are more similar.
+			\end{itemize}
+		\end{block}
+		\begin{block}{\Large Mixture Models}
+			Formulate a probabilistic model for patient traits with a single latent variable $d$ representing the underlying disorder. Use the EM algorithm to fit the model, then cluster by the inferred values of the latent variable.
+
+			Examples of mixture models:
+			\begin{itemize}
+				\item Independent Mixture: Traits are independent given $d$.
+				\item Conditional Mixture: Traits are independent given $d$ and their ancestors in HPO.
+			\end{itemize}
+		\end{block}
      \end{block}
      \vspace{3cm}
-     \begin{block}{\LARGE Diagnosis Method}
+     \begin{block}{\Huge Diagnosis Methods}
      \Large
      \begin{itemize}
      \item
@@ -92,7 +108,6 @@
    \normalsize
    Figure 1: A Toy Ontology Example
      \end{block}
-    \end{block}
 
     \end{column}
 
@@ -100,7 +115,7 @@
     \begin{block}{\Huge }
       \centering
 \includegraphics[width=0.7\textwidth]{cluster_comparison.png} \\
-   Figure 2: Comparisons of Different Clustering Methods
+   Figure 2: Comparison of Clustering Methods
 
     \end{block}
 
