@@ -96,12 +96,10 @@
 		\end{block}
      \end{block}
      \vspace{3cm}
+
      \begin{block}{\Huge Diagnosis Methods}
    
-     \begin{itemize}
-      \item 
-     \LARGE \textbf{Naive Bayes}
-
+     \begin{block}{\Large Naive Bayes}
      \begin{itemize}
         \Large
     \item
@@ -115,10 +113,10 @@
    Naive Bayes assumes that each phenotype is independent once a disease is given \\
    $Prob(d \mid p) \propto Prob(d) \times \prod Prob(phenotype_i \mid d)$
      \end{itemize}
+   \end{block}
     \vspace{3cm}
 
-    \item
-    \LARGE \textbf{Phenotype Matching}
+    \begin{block}{\Large Phenotype Matching}
      \begin{itemize}
      \Large
      \item
@@ -133,8 +131,6 @@
     \item
     The minimized distance representing transforming from the real patient to the canonical form of a disorder is used as the measure for closeness
          \end{itemize}
-  \end{itemize}
-   \vspace{3cm}
    \begin{center}
    \includegraphics[width=.9\textwidth]{toy_ontology}
    \\
@@ -147,25 +143,29 @@
 Blue circles are one patient's phenotypes and red ones are annotations of a disorder. In the left one, the real patient can transform into the canonical form of a disorder via $3 \rightarrow 2 \rightarrow 4 \rightarrow 7$ and $5 \rightarrow 8$, resulting in a total cost of 4. While the right one can achieve a total cost of 2 by $3 \rightarrow 6$ and $5 \rightarrow 8$.
    \end{column}
    \end{columns}
-     \end{block}
+   
+   \end{block}
+  \end{block}
 
     \end{column}
 
     \begin{column}{0.3\linewidth}
-    \begin{block}{\Huge }
+    \begin{block}{\Huge Results}
+    \begin{block}{\Large Clustering Results }
       \centering
 \includegraphics[width=0.7\textwidth]{cluster_comparison.png} \\
    Figure 2: Comparison of Clustering Methods
 
     \end{block}
 
-    \begin{block}{\large blah}
+    \begin{block}{\Large Diagnosis Results}
 
 \centering
 \includegraphics[width=.7\textwidth ]{sim_patients}
    \\
-   Figure 3: Diagnoses Results for 1498 Simulated Patients
+   Figure 3: Diagnosis Results for 1498 Simulated Patients
       \end{block}
+    \end{block}
     \end{column}
     \end{columns}
   \end{frame}
