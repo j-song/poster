@@ -36,32 +36,50 @@
     \end{block}
     
     \begin{block}{\Huge Motivation}
-    \begin{columns}[T]
-      \begin{column}{.5\textwidth}
-   \centering
-  \includegraphics[width = \textwidth, height=40cm ]{hpo}
-      \end{column}
-      
-      \begin{column}{.5\textwidth}
-	    \Large
-        \begin{itemize}
-          \item
-          HPO (Human Phenotype Ontology) provides structural information about phenotypes
-          \vspace{2cm}
-          \item
-          OMIM (Online Mendelian Inheritance in Man) annotates disorders with HPO terms
-          \vspace{2cm}
-          \item
-          PhenoTIps collects patients' phenotype data with standard HPO terms
-          \vspace{2cm}
-          \item 
-          These resources enable us to develop more informed algorithms to analyse patients
-      \end{itemize}  
-      \vspace{5cm}
-      \end{column}
+    
+    \begin{block}{\Large OMIM}
+      \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+        \end{column}
+        
+        \begin{column}{.5\textwidth}
+        \Large
+        Online Mendelian Inheritance in Man (OMIM) is a comprehensive collection of human genetic disorders. It provides annotations for genetic disorders with standard human phenotype terms and also contains gene information about genetic disorders.
+       \end{column}
     \end{columns}
-
     \end{block}
+
+    \begin{block}{\Large HPO}
+   \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+      \centering
+      \fbox{\includegraphics[width = .9\textwidth]{hpo}}
+     \end{column}
+     \begin{column}{.5\textwidth}
+      \Large
+      Human Phenotype Ontology (HPO) organizes standardized terms describing abnormal human phenotypes into a directed acyclic graph. It uses the  {\it{\Large is a}} relation to define parent-child relationships. Furthermore, it contains relationships between genetic features and human phenotypes.
+     \end{column}
+   \end{columns}
+  \end{block}
+  
+
+   \begin{block}{\Large PhenoTips}
+      \begin{columns}[T]
+        \begin{column} {.5\textwidth}
+           \vspace{1.5cm}
+           \centering
+           \fbox{\includegraphics[width=.9\textwidth]{phenotips}}
+        \end{column}
+        
+        \begin{column}{.5\textwidth}
+          \Large
+          PhenoTips helps collect phenotype data of patients with genetic disorders using standard HPO terms. Standard terminology helps the process of analysing patients' information. 
+        \end{column}
+      \end{columns}
+    \end{block}
+
+   \end{block}
+
     \begin{block}{\Huge Objective}
      \begin{itemize}
     \Large
@@ -114,7 +132,7 @@
    $Prob(d \mid p) \propto Prob(d) \times \prod Prob(phenotype_i \mid d)$
      \end{itemize}
    \end{block}
-    \vspace{3cm}
+    \vspace{1cm}
 
     \begin{block}{\Large Phenotype Matching}
      \begin{itemize}
@@ -131,8 +149,9 @@
     \item
     The minimized distance representing transforming from the real patient to the canonical form of a disorder is used as the measure for closeness
          \end{itemize}
+   \vspace{0.5cm}
    \begin{center}
-   \includegraphics[width=.9\textwidth]{toy_ontology}
+   \fbox{\includegraphics[width=.9\textwidth]{toy_ontology}}
    \\
    \normalsize
    Figure 1: A Toy Ontology Example
@@ -153,7 +172,7 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
     \begin{block}{\Huge Results}
     \begin{block}{\Large Clustering Results }
       \centering
-\includegraphics[width=0.7\textwidth]{cluster_comparison.png} \\
+\fbox{\includegraphics[width=0.7\textwidth]{cluster_comparison.png}} \\
    Figure 2: Comparison of Clustering Methods
 
     \end{block}
@@ -161,7 +180,7 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
     \begin{block}{\Large Diagnosis Results}
 
 \centering
-\includegraphics[width=.7\textwidth ]{sim_patients}
+\fbox{\includegraphics[width=.7\textwidth ]{sim_patients}}
    \\
    Figure 3: Diagnosis Results for 1498 Simulated Patients
       \end{block}
