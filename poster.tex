@@ -47,10 +47,15 @@
         \begin{itemize}
           \item
           HPO (Human Phenotype Ontology) provides structural information about phenotypes
+          \vspace{2cm}
           \item
           OMIM (Online Mendelian Inheritance in Man) annotates disorders with HPO terms
+          \vspace{2cm}
+          \item
+          PhenoTIps collects patients' phenotype data with standard HPO terms
+          \vspace{2cm}
           \item 
-          These two resources enable us to develop more informed algorithms to analyse patients
+          These resources enable us to develop more informed algorithms to analyse patients
       \end{itemize}  
       \vspace{5cm}
       \end{column}
@@ -92,21 +97,56 @@
      \end{block}
      \vspace{3cm}
      \begin{block}{\Huge Diagnosis Methods}
-     \Large
+   
      \begin{itemize}
+      \item 
+     \LARGE \textbf{Naive Bayes}
+
+     \begin{itemize}
+        \Large
+    \item
+    For a patient $p$, we want to find the disease $d$ with the highest conditional probability $Prob(d \mid p )$
+  \vspace{1cm}
+  \item
+   By Bayes' Theorem: \\
+   $Prob(d \mid p) = \frac{Prob(p \mid d) \times Prob(d)}{Prob(p)} \propto Prob(p \mid d) \times Prob(d)$
+  \vspace{1cm}
+   \item
+   Naive Bayes assumes that each phenotype is independent once a disease is given \\
+   $Prob(d \mid p) \propto Prob(d) \times \prod Prob(phenotype_i \mid d)$
+     \end{itemize}
+    \vspace{3cm}
+
+    \item
+    \LARGE \textbf{Phenotype Matching}
+     \begin{itemize}
+     \Large
      \item
      The objective is to measure how close a patient is to the canonical form of a disorder
+     \vspace{1cm}
      \item
-     Establish an one-to-one matching between the set of patient's phenotypes and annotations of a disorder
+     For each phenotype of a patient, compute the closest distances to each phenotype annotations of a disease. Construct a distance matrix from the calculated data
+     \vspace{1cm}
     \item
-    The cost of transforming from the real patient to the canonical patient is the measure for closeness
+    Use the cost matrix to determine the matching between patient's phenotypes and disease annotations that minimizes the total distance
+     \vspace{1cm}
+    \item
+    The minimized distance representing transforming from the real patient to the canonical form of a disorder is used as the measure for closeness
          \end{itemize}
+  \end{itemize}
    \vspace{3cm}
-   \centering
+   \begin{center}
    \includegraphics[width=.9\textwidth]{toy_ontology}
    \\
    \normalsize
    Figure 1: A Toy Ontology Example
+   \end{center}
+   \begin{columns}[T]
+   \begin{column}{.9\textwidth}
+   \large
+Blue circles are one patient's phenotypes and red ones are annotations of a disorder. In the left one, the real patient can transform into the canonical form of a disorder via $3 \rightarrow 2 \rightarrow 4 \rightarrow 7$ and $5 \rightarrow 8$, resulting in a total cost of 4. While the right one can achieve a total cost of 2 by $3 \rightarrow 6$ and $5 \rightarrow 8$.
+   \end{column}
+   \end{columns}
      \end{block}
 
     \end{column}
