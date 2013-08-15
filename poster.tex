@@ -52,7 +52,7 @@
           OMIM (Online Mendelian Inheritance in Man) annotates disorders with HPO terms
           \vspace{2cm}
           \item
-          PhenoTIps collects patients' phenotype data with standard HPO terms
+          PhenoTips collects patients' phenotype data with standard HPO terms
           \vspace{2cm}
           \item 
           These resources enable us to develop more informed algorithms to analyse patients
@@ -152,14 +152,24 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
     \end{column}
 
     \begin{column}{0.3\linewidth}
-    \begin{block}{\Huge }
+	\begin{block}{\Huge Datasets}
+	\Large
+		25 patients from published studies
+		\begin{itemize}
+			\item 13 with Floating Harbor syndrome
+			\item 6 with Rubinstein-Taybi syndrome
+			\item 6 with Opitz-Kaveggia syndrome
+		\end{itemize}
+		1498 simulated patients
+		\begin{itemize}
+			\item A patient is simulated by selecting a disease at random, and then assigning phenotypes to the patient according to the probabilities recorded on OMIM. Noise is then added by appending some of the 100 most common traits and then performing a random walk on the HPO graph. 
+		\end{itemize}
+	\end{block}
+    \begin{block}{\Huge Results}
       \centering
 \includegraphics[width=0.7\textwidth]{cluster_comparison.png} \\
    Figure 2: Comparison of Clustering Methods
 
-    \end{block}
-
-    \begin{block}{\large blah}
 
 \centering
 \includegraphics[width=.7\textwidth ]{sim_patients}
