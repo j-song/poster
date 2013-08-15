@@ -35,33 +35,52 @@
 
     \end{block}
     
-    \begin{block}{\Huge Motivation}
-    \begin{columns}[T]
-      \begin{column}{.5\textwidth}
-   \centering
-  \includegraphics[width = \textwidth, height=40cm ]{hpo}
-      \end{column}
-      
-      \begin{column}{.5\textwidth}
-	    \Large
-        \begin{itemize}
-          \item
-          HPO (Human Phenotype Ontology) provides structural information about phenotypes
-          \vspace{2cm}
-          \item
-          OMIM (Online Mendelian Inheritance in Man) annotates disorders with HPO terms
-          \vspace{2cm}
-          \item
-          PhenoTips collects patients' phenotype data with standard HPO terms
-          \vspace{2cm}
-          \item 
-          These resources enable us to develop more informed algorithms to analyse patients
-      \end{itemize}  
-      \vspace{5cm}
-      \end{column}
+    \begin{block}{\Huge Resources}
+    
+    \begin{block}{\Large OMIM}
+      \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+        \end{column}
+        
+        \begin{column}{.5\textwidth}
+        \Large
+        Online Mendelian Inheritance in Man (OMIM) is a comprehensive collection of human genetic disorders. It provides annotations for genetic disorders with standard human phenotype terms and also contains gene information about genetic disorders.
+       \end{column}
+%>>>>>>> ea42aaa04dd83dae239b3c6111a4b881f7e67f69
     \end{columns}
-
     \end{block}
+
+    \begin{block}{\Large HPO}
+   \begin{columns}[T]
+      \begin{column}{.5\textwidth}
+      \centering
+      \fbox{\includegraphics[width = .9\textwidth]{hpo}}
+     \end{column}
+     \begin{column}{.5\textwidth}
+      \Large
+      Human Phenotype Ontology (HPO) organizes standardized terms describing abnormal human phenotypes into a directed acyclic graph. It uses the  {\it{\Large is a}} relation to define parent-child relationships. Furthermore, it contains relationships between genetic features and human phenotypes.
+     \end{column}
+   \end{columns}
+  \end{block}
+  
+
+   \begin{block}{\Large PhenoTips}
+      \begin{columns}[T]
+        \begin{column} {.5\textwidth}
+           \vspace{1.5cm}
+           \centering
+           \fbox{\includegraphics[width=.9\textwidth]{phenotips}}
+        \end{column}
+        
+        \begin{column}{.5\textwidth}
+          \Large
+          PhenoTips helps collect phenotype data of patients with genetic disorders using standard HPO terms. Standard terminology helps the process of analysing patients' information. 
+        \end{column}
+      \end{columns}
+    \end{block}
+
+   \end{block}
+
     \begin{block}{\Huge Objective}
      \begin{itemize}
     \Large
@@ -96,12 +115,10 @@
 		\end{block}
      \end{block}
      \vspace{3cm}
+
      \begin{block}{\Huge Diagnosis Methods}
    
-     \begin{itemize}
-      \item 
-     \LARGE \textbf{Naive Bayes}
-
+     \begin{block}{\Large Naive Bayes}
      \begin{itemize}
         \Large
     \item
@@ -115,10 +132,10 @@
    Naive Bayes assumes that each phenotype is independent once a disease is given \\
    $Prob(d \mid p) \propto Prob(d) \times \prod Prob(phenotype_i \mid d)$
      \end{itemize}
-    \vspace{3cm}
+   \end{block}
+    \vspace{1cm}
 
-    \item
-    \LARGE \textbf{Phenotype Matching}
+    \begin{block}{\Large Phenotype Matching}
      \begin{itemize}
      \Large
      \item
@@ -133,10 +150,9 @@
     \item
     The minimized distance representing transforming from the real patient to the canonical form of a disorder is used as the measure for closeness
          \end{itemize}
-  \end{itemize}
-   \vspace{3cm}
+   \vspace{0.5cm}
    \begin{center}
-   \includegraphics[width=.9\textwidth]{toy_ontology}
+   \fbox{\includegraphics[width=.9\textwidth]{toy_ontology}}
    \\
    \normalsize
    Figure 1: A Toy Ontology Example
@@ -147,11 +163,14 @@
 Blue circles are one patient's phenotypes and red ones are annotations of a disorder. In the left one, the real patient can transform into the canonical form of a disorder via $3 \rightarrow 2 \rightarrow 4 \rightarrow 7$ and $5 \rightarrow 8$, resulting in a total cost of 4. While the right one can achieve a total cost of 2 by $3 \rightarrow 6$ and $5 \rightarrow 8$.
    \end{column}
    \end{columns}
-     \end{block}
+   
+   \end{block}
+  \end{block}
 
     \end{column}
 
     \begin{column}{0.3\linewidth}
+%<<<<<<< HEAD
 	\begin{block}{\Huge Datasets}
 	\Large
 		25 patients from published studies
@@ -165,17 +184,27 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
 			\item A patient is simulated by selecting a disease at random, and then assigning phenotypes to the patient according to the probabilities recorded on OMIM. Noise is then added by appending some of the 100 most common traits and then performing a random walk on the HPO graph. 
 		\end{itemize}
 	\end{block}
+%=======
     \begin{block}{\Huge Results}
+    \begin{block}{\Large Clustering Results }
+%>>>>>>> ea42aaa04dd83dae239b3c6111a4b881f7e67f69
       \centering
-\includegraphics[width=0.7\textwidth]{cluster_comparison.png} \\
+\fbox{\includegraphics[width=0.7\textwidth]{cluster_comparison.png}} \\
    Figure 2: Comparison of Clustering Methods
 
+%<<<<<<< HEAD
+%=======
+    \end{block}
+
+    \begin{block}{\Large Diagnosis Results}
+%>>>>>>> ea42aaa04dd83dae239b3c6111a4b881f7e67f69
 
 \centering
-\includegraphics[width=.7\textwidth ]{sim_patients}
+\fbox{\includegraphics[width=.7\textwidth ]{sim_patients}}
    \\
-   Figure 3: Diagnoses Results for 1498 Simulated Patients
+   Figure 3: Diagnosis Results for 1498 Simulated Patients
       \end{block}
+    \end{block}
     \end{column}
     \end{columns}
   \end{frame}
