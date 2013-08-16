@@ -16,7 +16,7 @@
   \boldmath
   %\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}                       % e.g. for DIN-A0 poster
   %\usepackage[orientation=portrait,size=a1,scale=1.4,grid,debug]{beamerposter}                  % e.g. for DIN-A1 poster, with optional grid and debug output
-  \usepackage[size=custom,width=200,height=160,scale=1.4,debug]{beamerposter}                     % e.g. for custom size poster
+  \usepackage[size=custom,width=200,height=160,scale=1.5,debug]{beamerposter}                     % e.g. for custom size poster
   %\usepackage[orientation=portrait,size=a0,scale=1.0,printer=rwth-glossy-uv.df]{beamerposter}   % e.g. for DIN-A0 poster with rwth-glossy-uv printer check
   % ...
   %
@@ -28,10 +28,21 @@
   \maketitle
     \begin{columns}[T]
       \begin{column}{0.3\linewidth}
+
+     \begin{block}{\Huge Objective}
+     \begin{itemize}
+    \Large
+     \item
+     Cluster patients with similar phenotypes
+    \item
+    Perform diagnoses on patients
+     \end{itemize}
+      \end{block}
+
     \begin{block}{\Huge Introduction}
     \Large
-    Rare genetic disorders are caused by abnormalities in the human genome. Due to different levels of gene expressions and influences from the environment, even patients with the same underlying disorder may exhibit varying symptoms, which is a challenge for accurate diagnosis. However, clustering multiple patients with similar symptoms and utilizing the structural information in ontologies, we can uncover more information from patients.
-   \vspace{3cm}
+    Rare genetic disorders are caused by abnormalities in the human genome. Due to different levels of gene expressions and influences from the environment, even patients with a same underlying disorder may exhibit varying symptoms, which makes accurate diagnoses challenging. By analysing the different amount of information encoded in each phenotype and the structural information provided by ontologies, we can conduct more informative analyses on patients and infer underlying disorders more accurately. 
+   \vspace{1cm} 
 
     \end{block}
     
@@ -44,9 +55,8 @@
         
         \begin{column}{.5\textwidth}
         \Large
-        Online Mendelian Inheritance in Man (OMIM) is a comprehensive collection of human genetic disorders. It provides annotations for genetic disorders with standard human phenotype terms and also contains gene information about genetic disorders.
+        Online Mendelian Inheritance in Man (OMIM) is a comprehensive collection of human genetic disorders. It associates each disorder with a list of standard human phenotype terms and also contains gene information about those disorders. 
        \end{column}
-%>>>>>>> ea42aaa04dd83dae239b3c6111a4b881f7e67f69
     \end{columns}
     \end{block}
 
@@ -54,11 +64,12 @@
    \begin{columns}[T]
       \begin{column}{.5\textwidth}
       \centering
-      \fbox{\includegraphics[width = .9\textwidth]{hpo}}
+      \vspace{1cm}
+      \fbox{\includegraphics[width = .9\textwidth, , height=25cm]{hpo}}
      \end{column}
      \begin{column}{.5\textwidth}
       \Large
-      Human Phenotype Ontology (HPO) organizes standardized terms describing abnormal human phenotypes into a directed acyclic graph. It uses the  {\it{\Large is a}} relation to define parent-child relationships. Furthermore, it contains relationships between genetic features and human phenotypes.
+      Human Phenotype Ontology (HPO) organizes standardized terms describing abnormal human phenotypes as a directed acyclic graph. It uses the  {\it{\Large is a}} relation to define parent-child relationships (e.g. triangular face {\it{\Large is an}} abnormality of facial shape). Furthermore, it provides conditional probabilities for some phenotypes when given a disorder, for instance, how likely it is for a patient with Floating Harbour Syndrome to have triangular face. 
      \end{column}
    \end{columns}
   \end{block}
@@ -67,29 +78,40 @@
    \begin{block}{\Large PhenoTips}
       \begin{columns}[T]
         \begin{column} {.5\textwidth}
-           \vspace{1.5cm}
+           \vspace{4cm}
            \centering
-           \fbox{\includegraphics[width=.9\textwidth]{phenotips}}
+           \fbox{\includegraphics[width=.9\textwidth]{PhenoTips}}
         \end{column}
         
         \begin{column}{.5\textwidth}
           \Large
-          PhenoTips helps collect phenotype data of patients with genetic disorders using standard HPO terms. Standard terminology helps the process of analysing patients' information. 
+          PhenoTips helps collect phenotype data of patients with genetic disorders using standard HPO terms. Standard terminology helps the process of analysing patients' information by eliminating ambiguities of symptom descriptions.
         \end{column}
       \end{columns}
     \end{block}
 
    \end{block}
 
-    \begin{block}{\Huge Objective}
-     \begin{itemize}
-    \Large
-     \item
-     Cluster patients with similar phenotypes
+   \begin{block}{\Large Previous Work}
+   \Large
+   Phenomizer (Robinson et al., 2008 {\it{\Large AM J HUM GENET 83}}, 610 - 615)
+   \begin{itemize}
     \item
-    Perform diagnoses on patients
-     \end{itemize}
-      \end{block}
+    Use information content of each HPO term to conduct similarity search
+    \item
+    For two HPO terms $s, t$, $A(s, t)$ represents their common ancestors
+    \item
+    $p(t) = \frac{\text{\# of associated disorders}}{\text{\# of disorders}}$ for each HPO term $t$
+    \item
+    $sim(s, t) = \underset{a \in A(s, t)}{max} -\log p(a)$
+    \item
+    $sim(P,  D)$ = $\frac{1}{2} ( avg[\sum\limits_{s \in P}
+    \underset{t \in D}{max} sim(s, t) ]  +  avg[\sum\limits_{t \in D}
+    \underset{s \in P}{max} sim(t, s) ]  ) $ 
+    \item
+    This method can be applied both to measure the similarity between pairs of patients and between patient-disorder pair.
+  \end{itemize}
+   \end{block}
     \end{column}
 
     \begin{column}{0.3\linewidth}
@@ -170,7 +192,6 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
     \end{column}
 
     \begin{column}{0.3\linewidth}
-%<<<<<<< HEAD
 	\begin{block}{\Huge Datasets}
 	\Large
 		25 patients from published studies
@@ -184,20 +205,14 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
 			\item A patient is simulated by selecting a disease at random, and then assigning phenotypes to the patient according to the probabilities recorded on OMIM. Noise is then added by appending some of the 100 most common traits and then performing a random walk on the HPO graph. 
 		\end{itemize}
 	\end{block}
-%=======
     \begin{block}{\Huge Results}
     \begin{block}{\Large Clustering Results }
-%>>>>>>> ea42aaa04dd83dae239b3c6111a4b881f7e67f69
       \centering
 \fbox{\includegraphics[width=0.7\textwidth]{cluster_comparison.png}} \\
    Figure 2: Comparison of Clustering Methods
-
-%<<<<<<< HEAD
-%=======
     \end{block}
 
     \begin{block}{\Large Diagnosis Results}
-%>>>>>>> ea42aaa04dd83dae239b3c6111a4b881f7e67f69
 
 \centering
 \fbox{\includegraphics[width=.7\textwidth ]{sim_patients}}
