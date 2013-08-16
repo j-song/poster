@@ -16,16 +16,18 @@
   \boldmath
   %\usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter}                       % e.g. for DIN-A0 poster
   %\usepackage[orientation=portrait,size=a1,scale=1.4,grid,debug]{beamerposter}                  % e.g. for DIN-A1 poster, with optional grid and debug output
-  \usepackage[size=custom,width=200,height=160,scale=1.5,debug]{beamerposter}                     % e.g. for custom size poster
+  \usepackage[size=custom,width=200,height=160,scale=1.4,debug]{beamerposter}                     % e.g. for custom size poster
   %\usepackage[orientation=portrait,size=a0,scale=1.0,printer=rwth-glossy-uv.df]{beamerposter}   % e.g. for DIN-A0 poster with rwth-glossy-uv printer check
   % ...
   %
-  \title[]{{\fontsize{240}{240}\selectfont Title}}
-  \author[]{Jialin Song and Jonathan Zung}
-  \institute[University of Toronto]{Computational Biology Lab, University of Toronto}
+  \title[]{{\fontsize{220}{240}\selectfont Clustering and Diagnosing Methods for Rare Genetic Disorders}}
+  \author[]{\huge Jialin Song and Jonathan Zung}
+  \institute[University of Toronto]{\huge Computational Biology Lab, University of Toronto}
+  \date{}
   \begin{document}
   \begin{frame}{}
   \maketitle
+  \vspace{-3cm}
     \begin{columns}[T]
       \begin{column}{0.3\linewidth}
 
@@ -52,7 +54,6 @@
    \begin{columns}[T]
       \begin{column}{.5\textwidth}
       \centering
-      \vspace{1cm}
       \fbox{\includegraphics[width = .9\textwidth, , height=25cm]{hpo}}
      \end{column}
      \begin{column}{.5\textwidth}
@@ -66,8 +67,8 @@
       \begin{columns}[T]
         \begin{column}{.5\textwidth}
 		\centering
-		\vspace{1cm}
-		\fbox{\includegraphics[width = .9\textwidth]{omim_vis}}
+		\vspace{0.5cm}
+		\fbox{\includegraphics[width = .9\textwidth, height=20cm]{omim_vis}}
         \end{column}
         
         \begin{column}{.5\textwidth}
@@ -82,7 +83,7 @@
    \begin{block}{\Large PhenoTips}
       \begin{columns}[T]
         \begin{column} {.5\textwidth}
-           \vspace{4cm}
+           \vspace{2.5cm}
            \centering
            \fbox{\includegraphics[width=.9\textwidth]{PhenoTips}}
         \end{column}
@@ -103,7 +104,7 @@
     \item
     Use information content of each HPO term to conduct similarity search
     \item
-    For two HPO terms $s, t$, $A(s, t)$ represents their common ancestors
+    For two HPO terms $s, t$, $A(s, t)$ represents their common an-----cestors
     \item
     $p(t) = \frac{\text{\# of associated disorders}}{\text{\# of disorders}}$ for each HPO term $t$
     \item
@@ -218,10 +219,18 @@ Blue circles are one patient's phenotypes and red ones are annotations of a diso
 
     \begin{block}{\Large Diagnosis Results}
 
-\centering
+\centering {
 \fbox{\includegraphics[width=.7\textwidth ]{sim_patients}}
    \\
-   Figure 3: Diagnosis Results for 1498 Simulated Patients
+   Figure 3: Diagnosis Results for 1498 Simulated Patients  \\}
+   \vspace{0.5cm}
+   \begin{columns}
+   \begin{column}{.7\textwidth}
+   \large
+   Naive Bayes made near 35\% more correct diagnoses than Phenomizer by utilizing frequency data of abnormal phenotypes, while phenotype matching outperformed naive Bayes by utilizing structural information in HPO. 
+  \end{column}
+  \end{columns}
+
       \end{block}
     \end{block}
     \end{column}
