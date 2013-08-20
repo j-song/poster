@@ -2,8 +2,6 @@
 % \documentclass[final,hyperref={pdfpagelabels=false}]{beamer} % beamer 3.07: get rid of beamer warnings
 \mode<presentation>
 { %% check http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php for examples
-
-
   \usetheme{Berlin} %% you should define your own theme e.g. for big headlines using your own logos
   \setbeamercovered{transparent} } \usepackage[english]{babel}
 \usepackage[latin1]{inputenc} \usepackage{amsmath,amsthm, amssymb,
@@ -29,7 +27,7 @@
   \vspace{-3cm}
   \begin{columns}[T]
     \begin{column}{0.3\linewidth}
-
+      \vbox to 0.8\textheight{
     \begin{block}{\Huge Introduction}
       \Large Rare genetic disorders are caused by abnormalities in the
       human genome. Due to different levels of gene expression and
@@ -41,6 +39,7 @@
       can design more informed algorithms for analyzing patient data.
 
     \end{block}
+    \vfill
     \begin{block}{\Huge Objective}
       \begin{itemize}
         \Large
@@ -48,7 +47,7 @@
       \item Diagnose patients
       \end{itemize}
     \end{block}
-
+    \vfill
    
     \begin{block}{\Huge Resources}
  
@@ -106,8 +105,8 @@
     \end{block}
 
   \end{block}
-
-   \begin{block}{\Large Previous Work}
+  \vfill
+   \begin{block}{\Huge Previous Work}
      \Large Phenomizer (Robinson et al., 2008 {\it{\Large AM J HUM
          GENET 83}}, 610 - 615)
      \begin{itemize}
@@ -125,9 +124,11 @@
        between pairs of patients and between patient-disorder pair.
      \end{itemize}
    \end{block}
+}
  \end{column}
 
  \begin{column}{0.3\linewidth}
+   \vbox to 0.8\textheight{
    \begin{block}{\Huge Clustering Methods}
      \Large
      \begin{block}{\Large Patient-Patient similarity metrics}
@@ -136,28 +137,28 @@
 
        Examples of similarity metrics:
        \begin{itemize}
-       \item Euclidean Metric: Count number of shared traits between
+       \item Euclidean Metric: Count number of shared phenotypes between
          two patients.
-       \item Information Metric: Essentially, count shared traits
-         weighted by their rarities. Patients sharing rarer traits are
+       \item Information Metric: Essentially, count shared phenotypes
+         weighted by their rarities. Patients sharing rarer phenotypes are
          more similar.
        \end{itemize}
      \end{block}
      \begin{block}{\Large Mixture Models}
-       Formulate a probabilistic model for patient traits with a
+       Formulate a probabilistic model for patient phenotypes with a
        single latent variable $d$ representing the underlying
        disorder. Use the EM algorithm to fit the model, then cluster
        by the inferred values of $d$.
 
        Examples of mixture models:
        \begin{itemize}
-       \item Independent Mixture: Traits are independent given $d$.
-       \item Conditional Mixture: Traits are independent given $d$ and
+       \item Independent Mixture: Phenotypes are independent given $d$.
+       \item Conditional Mixture: Phenotypes are independent given $d$ and
          their ancestors in HPO.
        \end{itemize}
      \end{block}
    \end{block}
-   \vspace{3cm}
+   \vfill
 
    \begin{block}{\Huge Diagnosis Methods}
    
@@ -204,22 +205,24 @@
        \end{figure}
        \begin{columns}[T]
          \begin{column}{.9\textwidth}
-           \large Blue circles are one patient's phenotypes and red
-           ones are annotations of a disorder. In the right one, the
-           real patient can transform into the canonical form of a
-           disorder via $3 \rightarrow 2 \rightarrow 4 \rightarrow 7$
-           and $5 \rightarrow 8$, resulting in a total cost of 4. The
-           left one can achieve a total cost of 2 by $3 \rightarrow 6$
-           and $5 \rightarrow 8$.
+           \large A patient's phenotypes are marked in blue and the
+           annotations of a disorder are marked in red. In the example
+           on the right, the real patient can transform into the
+           canonical form of a disorder via $3 \rightarrow 2
+           \rightarrow 4 \rightarrow 7$ and $5 \rightarrow 8$,
+           resulting in a total cost of 4. In the left example, we can
+           achieve a total cost of 2 by $3 \rightarrow 6$ and $5
+           \rightarrow 8$.
          \end{column}
        \end{columns}
    
      \end{block}
    \end{block}
-
+}
  \end{column}
 
  \begin{column}{0.3\linewidth}
+   \vbox to 0.8\textheight{
    \begin{block}{\Huge Datasets}
      \Large 25 real patients from published studies
      \begin{itemize}
@@ -236,14 +239,14 @@
        performing a random walk on the HPO graph.
      \end{itemize}
    \end{block}
-   \begin{block}{\Huge Results}
-     \begin{block}{\Large Clustering Results }
+   \vfill
+     \begin{block}{\Huge Clustering Results }
        \begin{figure}
          \centering
-         \fbox{\includegraphics[width=0.7\textwidth]{cluster_comparison.png}} \\
+         \fbox{\includegraphics[width=0.6\textwidth]{cluster_comparison.png}} \\
          \caption{Clustering Results for 25 Real Patients}
        \end{figure}
-       \large The above figure compares clustering results for five
+       \large The figure above compares clustering results for five
        algorithms on the 25 real patients. To make the clustering
        problem more difficult, the algorithms were only provided with
        a random subset of between 3 and 9 of each patient's
@@ -257,11 +260,11 @@
        restriction that having a phenotype implies having all its
        ancestors.
      \end{block}
-
-     \begin{block}{\Large Diagnosis Results}
+     \vfill
+     \begin{block}{\Huge Diagnosis Results}
        \begin{figure}
          \centering
-         \fbox{\includegraphics[width=.7\textwidth]{sim_patients}}
+         \fbox{\includegraphics[width=.6\textwidth]{sim_patients}}
          \caption{Diagnosis Results for 1498 Simulated Patients}
        \end{figure}
        \large Naive Bayes made nearly 35\% more correct diagnoses than
@@ -270,8 +273,9 @@
        naive Bayes by utilizing structural information in HPO.
 
      \end{block}
-   \end{block}
+}
  \end{column}
+
 \end{columns}
 \end{frame}
 \end{document}
