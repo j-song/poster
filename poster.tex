@@ -2,12 +2,11 @@
 % \documentclass[final,hyperref={pdfpagelabels=false}]{beamer} % beamer 3.07: get rid of beamer warnings
 \mode<presentation>
 { %% check http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php for examples
-  \usetheme{Berlin} %% you should define your own theme e.g. for big headlines using your own logos
+  % \usetheme{Berlin} %% you should define your own theme e.g. for big headlines using your own logos
   \setbeamercovered{transparent} } \usepackage[english]{babel}
-\usepackage{caption}
-\usepackage[latin1]{inputenc} \usepackage{amsmath,amsthm, amssymb,
-  latexsym} \usepackage{tikz} \usetikzlibrary{arrows}
-\usepackage{pgfplots} \usepackage{fix-cm}
+\usepackage{caption} \usepackage[latin1]{inputenc}
+\usepackage{amsmath,amsthm, amssymb, latexsym} \usepackage{tikz}
+\usetikzlibrary{arrows} \usepackage{pgfplots} \usepackage{fix-cm}
 % \usepackage{times}\usefonttheme{professionalfonts} % times is obsolete
 \usefonttheme[onlymath]{serif} \boldmath
 % \usepackage[orientation=portrait,size=a0,scale=1.4,debug]{beamerposter} % e.g. for DIN-A0 poster
@@ -16,12 +15,13 @@
 % \usepackage[orientation=portrait,size=a0,scale=1.0,printer=rwth-glossy-uv.df]{beamerposter} % e.g. for DIN-A0 poster with rwth-glossy-uv printer check
 % ...
 \setbeamertemplate{footline}{} \setbeamertemplate{headline}{}
-\setbeamertemplate{caption}[numbered]
-\title[]{{\fontsize{220}{240}\selectfont \vspace{2.5cm} \\
-    Clustering and Diagnosing Patients with Rare Genetic Disorders
-    \vspace{2.5cm} }} \author[]{\huge Jialin Song and Jonathan Zung}
-\institute[University of Toronto]{\huge Computational Biology Lab,
-  University of Toronto} \date{}
+\setbeamertemplate{caption}[numbered] \setbeamertemplate{itemize
+  item}{\raisebox{0.23ex}{\large$\blacktriangleright$}\hskip0.1em}
+\title[]{{\fontsize{185}{240}\selectfont \textbf{Clustering and
+      Diagnosing Patients with Rare Genetic Disorders}}}
+\author[]{\huge Jialin Song and Jonathan Zung} \institute[University
+of Toronto]{\huge Computational Biology Lab, University of Toronto}
+\date{}
 \begin{document}
 \begin{frame}{}
   \vspace{-2cm}
@@ -30,7 +30,7 @@
   \begin{columns}[T]
     \begin{column}{0.3\linewidth}
       \vbox to 0.82\textheight{
-        \begin{block}{\Huge Introduction}
+        \begin{block}{\Huge \textbf{Introduction}}
           \Large Rare genetic disorders are caused by abnormalities in
           the human genome. Due to different levels of gene expression
           and influences from the environment, even patients with a
@@ -43,7 +43,7 @@
 
     \end{block}
     \vfill
-    \begin{block}{\Huge Objectives}
+    \begin{block}{\Huge \textbf{Objectives}}
       \begin{itemize}
         \Large
       \item \textbf{Diagnose patients}: We want to help clinicians
@@ -57,30 +57,28 @@
     \end{block}
     \vfill
    
-    \begin{block}{\Huge Resources}
-    \end{block}
-    \begin{block}{\Large HPO}
-      \begin{columns}[T]
-        \begin{column}{.5\textwidth}
-          \centering \fbox{\includegraphics[width =
-            .9\textwidth]{hpo}}
-        \end{column}
-        \begin{column}{.5\textwidth}
-          \Large The Human Phenotype Ontology (HPO) organizes
-          standardized terms describing abnormal human phenotypes as a
-          directed acyclic graph. More specific terms are children of
-          more general terms. For example, ``dislocation'' is a child
-          of ``abnormality of the joints''.
-        \end{column}
-      \end{columns}
-    \end{block}
+    \begin{block}{\Huge \textbf{Resources}}
+      \begin{block}{\Large \textbf{HPO}}
+        \begin{columns}[T]
+          \begin{column}{.5\textwidth}
+            \centering \includegraphics[width = .9\textwidth]{hpo}
+          \end{column}
+          \begin{column}{.5\textwidth}
+            \Large The Human Phenotype Ontology (HPO) organizes
+            standardized terms describing abnormal human phenotypes as
+            a directed acyclic graph. More specific terms are children
+            of more general terms. For example, ``dislocation'' is a
+            child of ``abnormality of the joints''.
+          \end{column}
+        \end{columns}
+      \end{block}
 
-    \begin{block}{\Large OMIM}
-      \begin{columns}[T]
-        \begin{column}{.5\textwidth}
-          \centering \fbox{\includegraphics[width =
-            .9\textwidth]{omim_vis}}
-        \end{column}
+      \begin{block}{\Large \textbf{OMIM}}
+        \begin{columns}[T]
+          \begin{column}{.5\textwidth}
+            \centering \includegraphics[width =
+            .9\textwidth]{omim_vis}
+          \end{column}
         
         \begin{column}{.5\textwidth}
           \Large Online Mendelian Inheritance in Man (OMIM) is a large
@@ -96,11 +94,11 @@
 
   
 
-    \begin{block}{\Large PhenoTips}
+    \begin{block}{\Large \textbf{PhenoTips}}
       \begin{columns}[T]
         \begin{column} {.5\textwidth}
           \centering
-          \fbox{\includegraphics[width=.9\textwidth]{PhenoTips}}
+          \includegraphics[width=.9\textwidth]{PhenoTips}
         \end{column}
         
         \begin{column}{.5\textwidth}
@@ -110,10 +108,10 @@
           symptom descriptions.
         \end{column}
       \end{columns}
-
+    \end{block}
   \end{block}
   \vfill
-  \begin{block}{\Huge Previous Work}
+  \begin{block}{\Huge \textbf{Previous Work}}
     \Large Phenomizer (Robinson et al., 2008 {\it{\Large AM J HUM
         GENET 83}}, 610 - 615)
 
@@ -141,95 +139,99 @@
 
  \begin{column}{0.3\linewidth}
    \vbox to 0.82\textheight{
-     \begin{block}{\Huge Clustering Methods}
-     \end{block}
-     \Large
-     \begin{block}{\Large Patient-Patient similarity metrics}
-       Define a patient-patient similarity metric, and then apply a
-       standard clustering algorithm (in our case, spectral
-       clustering).
+     \begin{block}{\Huge \textbf{Clustering Methods}}
+       \Large
+       \begin{block}{\Large \textbf{Patient-Patient similarity
+             metrics}}
+         We can define a patient-patient similarity metric, and then
+         apply a standard clustering algorithm (in our case, spectral
+         clustering).
 
-       Examples of similarity metrics:
-       \begin{itemize}
-       \item Euclidean Metric: Count the number of phenotypes shared
-         between two patients.
-       \item Information Metric: Here we count shared phenotypes
-         weighted by rareness, so that patients sharing rarer
-         phenotypes are more similar. The similarities are normalized
-         by the analagous weighted count of the total number of phenotypes
-         for the two patients.
-       \end{itemize}
-     \end{block}
-     \begin{block}{\Large Mixture Models}
-       Formulate a probabilistic model for patient phenotypes with a
-       single latent variable $d$ representing the underlying
-       disorder. Use the EM algorithm to fit the model, and then
-       cluster by the inferred values of $d$.
+         Examples of similarity metrics:
+         \begin{itemize}
+         \item Euclidean Metric: Count the number of phenotypes shared
+           between two patients.
+         \item Information Metric: Here we count shared phenotypes
+           weighted by their log probabilities in the general
+           population, so that patients sharing rarer phenotypes are
+           more similar. The similarities are normalized by the
+           analagous weighted count of the total number of phenotypes
+           for the two patients.
+         \end{itemize}
+       \end{block}
 
-       Examples of mixture models:
-       \begin{itemize}
-       \item Independent Mixture: Phenotypes are independent given
-         $d$.
-       \item Conditional Mixture: Phenotypes are conditionally
-         independent given $d$ and their common ancestors in HPO.
-       \end{itemize}
+       \begin{block}{\Large \textbf{Mixture Models}}
+         First we formulate a probabilistic model for patient
+         phenotypes with a single latent variable $d$ representing the
+         underlying disorder. We can use the EM algorithm to fit the
+         model, and then cluster by the inferred values of $d$.
+
+         Examples of mixture models:
+         \begin{itemize}
+         \item Independent Mixture: Phenotypes are independent given
+           $d$.
+         \item Conditional Mixture: Phenotypes are conditionally
+           independent given $d$ and their ancestors in HPO. In order to
+           have a phenotype, a patient must also have its ancestors in
+           HPO.  \end{itemize}
+       \end{block}
      \end{block}
      \vfill
 
-     \begin{block}{\Huge Diagnosis Methods}
-     \end{block}
-     \begin{block}{\Large Naive Bayes}
-       \begin{itemize}
-         \Large
-       \item For a patient $p$, we want to find the disorder $d$ with
-         the highest conditional probability $Prob(d \mid p )$.
-       \item By Bayes' Theorem,
-         \[Prob(d \mid p) = \frac{Prob(p \mid d) \times
-           Prob(d)}{Prob(p)} \propto Prob(p \mid d) \times Prob(d)\]
-       \item Naive Bayes assumes that each phenotype is independent
-         once a disorder is given
-         \[Prob(d \mid p) \propto Prob(d) \times \prod
-         Prob(phenotype_i \mid d)\]
-       \end{itemize}
-     \end{block}
+     \begin{block}{\Huge \textbf{Diagnosis Methods}}
+       \begin{block}{\Large \textbf{Naive Bayes}}
+         \begin{itemize}
+           \Large
+         \item For a patient $p$, we want to find the disorder $d$
+           with the highest conditional probability $Prob(d \mid p )$.
+         \item By Bayes' Theorem,
+           \[Prob(d \mid p) = \frac{Prob(p \mid d) \times
+             Prob(d)}{Prob(p)} \propto Prob(p \mid d) \times Prob(d)\]
+         \item Naive Bayes assumes that each phenotype is independent
+           once a disorder is given
+           \[Prob(d \mid p) \propto Prob(d) \times \prod_i
+           Prob(phenotype_i \mid d)\]
+         \end{itemize}
+       \end{block}
 
-     \begin{block}{\Large Phenotype Matching}
-       \begin{itemize}
-         \Large
-       \item The objective is to measure how close a patient is to the
-         canonical form of a disorder.
-       \item For each of a patient's phenotypes, compute the closest
-         distance to each phenotype annotation of a
-         disorder. Construct a distance matrix from the calculated data.
-       \item Use the cost matrix to determine the matching between
-         patient's phenotypes and disorder annotations that minimizes
-         the total distance.
-       \item The minimimum distance required to transform from the
-         real patient to the canonical form of a disorder is used as
-         the measure for closeness.
-       \end{itemize}
-       \vspace{0.5cm}
-       \begin{figure}
-         \centering
-         \fbox{\includegraphics[width=.9\textwidth]{toy_ontology}}
+       \begin{block}{\Large \textbf{Phenotype Matching}}
+         \begin{itemize}
+           \Large
+         \item The objective is to measure how close a patient is to
+           the canonical form of a disorder.
+         \item For each of a patient's phenotypes, compute the closest
+           distance to each phenotype annotation of a
+           disorder. Construct a distance matrix from the calculated
+           data.
+         \item Use the cost matrix to determine the matching between
+           patient's phenotypes and disorder annotations that
+           minimizes the total distance.
+         \item The minimimum distance required to transform from the
+           real patient to the canonical form of a disorder is used as
+           the measure for closeness.
+         \end{itemize}
          \vspace{0.5cm}
-         \caption*{\large A Toy Example}
-       \end{figure}
-           \Large A patient's phenotypes are marked in blue and the
-           annotations of a disorder are marked in red. In the example
-           on the right, the real patient can transform into the
-           canonical form of a disorder via $3 \rightarrow 2
-           \rightarrow 4 \rightarrow 7$ and $5 \rightarrow 8$,
-           resulting in a total cost of 4. In the left example, we can
-           achieve a total cost of 2 by $3 \rightarrow 6$ and $5
-           \rightarrow 8$.
+         \begin{figure}
+           \centering
+           \includegraphics[width=.9\textwidth]{toy_ontology}
+           \vspace{0.5cm}
+           \caption*{\large A Toy Example}
+         \end{figure}
+         \Large A patient's phenotypes are marked in blue and the
+         annotations of a disorder are marked in red. In the example
+         on the right, the real patient can transform into the
+         canonical form of a disorder via $3 \rightarrow 2 \rightarrow
+         4 \rightarrow 7$ and $5 \rightarrow 8$, resulting in a total
+         cost of 4. In the left example, we can achieve a total cost
+         of 2 by $3 \rightarrow 6$ and $5 \rightarrow 8$.
+       \end{block}
      \end{block}
    }
  \end{column}
 
  \begin{column}{0.3\linewidth}
    \vbox to 0.82\textheight{
-     \begin{block}{\Huge Datasets}
+     \begin{block}{\Huge \textbf{Datasets}}
        \Large 25 real patients from published studies
        \begin{itemize}
        \item 13 with Floating Harbor syndrome
@@ -246,10 +248,10 @@
        \end{itemize}
      \end{block}
      \vfill
-     \begin{block}{\Huge Clustering Results }
+     \begin{block}{\Huge \textbf{Clustering Results}}
        \begin{figure}
          \centering
-         \fbox{\includegraphics[width=0.6\textwidth]{cluster_comparison.png}}
+         \includegraphics[width=0.6\textwidth]{cluster_comparison.png}
          \vspace{0.5cm}
          \caption*{\large Clustering Results for 25 Real Patients}
        \end{figure}
@@ -268,10 +270,10 @@
        ancestors are.
      \end{block}
      \vfill
-     \begin{block}{\Huge Diagnosis Results}
+     \begin{block}{\Huge \textbf{Diagnosis Results}}
        \begin{figure}
          \centering
-         \fbox{\includegraphics[width=.6\textwidth]{sim_patients}}
+         \includegraphics[width=.6\textwidth]{sim_patients}
          \vspace{0.5cm}
          \caption*{\large Diagnosis Results for 1498 Simulated
            Patients}

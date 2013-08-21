@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.31)  13 AUG 2013 16:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.7.8)  21 AUG 2013 16:40
 entering extended mode
  %&-line parsing enabled.
-**poster.tex
-(./poster.tex
+**/home/jonathan/Documents/poster/poster.tex
+(/home/jonathan/Documents/poster/poster.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -639,23 +639,7 @@ Package: beamerinnerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
 y
 Package: beamerouterthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))) (/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemeBerlin.sty
-Package: beamerthemeBerlin 2010/06/17  (rcs-revision d02a7cf4d8ae)
-
-(/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthememiniframes
-.sty
-Package: beamerouterthememiniframes 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemewhale.sty
-Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
-Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)
-(/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemerectangles
-.sty
-Package: beamerinnerthemerectangles 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+))) (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
 (/usr/share/texmf-texlive/tex/generic/babel/english.ldf
@@ -673,7 +657,28 @@ LaTeX Info: Redefining \textlatin on input line 82.
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen179
+\captionmargin@=\dimen180
+\captionwidth=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+)
+\c@ContinuedFloat=\count151
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+
+
+Package caption Warning: Hyperref support is turned off
+(caption)                because hyperref has stopped early.
+See the caption package documentation for explanation.
+
+) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks41
 \inpenc@posthook=\toks42
@@ -700,8 +705,8 @@ File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen179
-\pgf@nodesepend=\dimen180
+\pgf@nodesepstart=\dimen185
+\pgf@nodesepend=\dimen186
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
@@ -711,8 +716,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen181
-\pgffor@skip=\dimen182
+\pgffor@iter=\dimen187
+\pgffor@skip=\dimen188
 \pgffor@stack=\toks43
 \pgffor@toks=\toks44
 ))
@@ -721,29 +726,29 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count151
-\pgfplotmarksize=\dimen183
+\pgf@plot@mark@count=\count152
+\pgfplotmarksize=\dimen189
 )
-\tikz@lastx=\dimen184
-\tikz@lasty=\dimen185
-\tikz@lastxsaved=\dimen186
-\tikz@lastysaved=\dimen187
-\tikzleveldistance=\dimen188
-\tikzsiblingdistance=\dimen189
+\tikz@lastx=\dimen190
+\tikz@lasty=\dimen191
+\tikz@lastxsaved=\dimen192
+\tikz@lastysaved=\dimen193
+\tikzleveldistance=\dimen194
+\tikzsiblingdistance=\dimen195
 \tikz@figbox=\box54
 \tikz@tempbox=\box55
-\tikztreelevel=\count152
-\tikznumberofchildren=\count153
-\tikznumberofcurrentchild=\count154
-\tikz@fig@count=\count155
+\tikztreelevel=\count153
+\tikznumberofchildren=\count154
+\tikznumberofcurrentchild=\count155
+\tikz@fig@count=\count156
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count156
-\pgfmatrixcurrentcolumn=\count157
-\pgf@matrix@numberofcolumns=\count158
+\pgfmatrixcurrentrow=\count157
+\pgfmatrixcurrentcolumn=\count158
+\pgf@matrix@numberofcolumns=\count159
 )
-\tikz@expandcount=\count159
+\tikz@expandcount=\count160
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
@@ -755,107 +760,72 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
-\arrowsize=\dimen190
+\arrowsize=\dimen196
 ))
-(/home/jsong/texmf/tex/latex/pgfplots/pgfplots.sty
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2013/03/17 v1.8 Data Visualization (1.8)
+(/usr/share/texmf-texlive/tex/latex/pgfplots/pgfplots.sty
+Package: pgfplots 2009/02/14 Version 1.2.2
 
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplots.code.tex
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texmf-texlive/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texmf-texlive/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks45
 \t@pgfplots@tokb=\toks46
 \t@pgfplots@tokc=\toks47
-\pgfplots@tmpa=\dimen191
-\c@pgfplots@coordindex=\count160
-\c@pgfplots@scanlineindex=\count161
-
-(/home/jsong/texmf/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
-(/home/jsong/texmf/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loade
-r.code.tex
+\pgfplots@tmpa=\dimen197
+)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_loader.code.tex
 Package pgfplots: loading complementary code for your PGF version...
 
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_misc.
-code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfke
-ys.code.tex
-\pgfkeys@pathtoks=\toks48
-\pgfkeys@temptoks=\toks49
+(/usr/share/texmf-texlive/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_misc.code.tex)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks48
+)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count161
+)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsup
+p_pgflibraryplothandlers.code.tex
+File: pgfplotsoldpgfsupp_pgflibraryplothandlers.code.tex 2009/02/13 v2.10 (rcs-
+revision 1.7)
+\pgf@plot@mark@count=\count162
+\pgfplotmarksize=\dimen198
+)
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
+(/usr/share/texmf-texlive/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texmf-texlive/tex/generic/pgfplots/liststructure/pgfplotsliststruct
+ure.code.tex)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/liststructure/pgfplotsliststruct
+ureext.code.tex)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/liststructure/pgfplotsarray.code
+.tex
+\c@pgfplotsarray@tmp=\count163
+)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/numtable/pgfplotstable.code.tex
+\c@pgfplotstable@counta=\count164
+\pgfplotstable@outfile=\write5
 
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfke
-ysfiltered.code.tex
-\pgfkeys@tmptoks=\toks50
-))
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfma
-thfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count162
-)
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfli
-braryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2012/09/11 v2.10 (rcs-revision 1.17)
-\pgf@plot@mark@count=\count163
-\pgfplotmarksize=\dimen192
-)
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfli
-braryfpu.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfco
-rescopes.code.tex
-File: pgfcorescopes.code.tex 2012/11/30  (rcs-revision 1.38)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count164
-)
-(/home/jsong/texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfco
-relayers.code.tex
-File: pgfcorelayers.code.tex 2012/11/07  (rcs-revision 1.5)
-))
-(/home/jsong/texmf/tex/generic/pgfplots/util/pgfplotsutil.code.tex
-(/home/jsong/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructure.cod
-e.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.
-code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count165
-)
-(/home/jsong/texmf/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count166
-\t@pgfplotstable@a=\toks51
-)
-(/home/jsong/texmf/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
-(/home/jsong/texmf/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
-(/home/jsong/texmf/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.cod
-e.tex
-\c@pgfplotslibrarysurf@no=\count167
-
-(/home/jsong/texmf/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfs
-ys-pdftex.def)))
-(/home/jsong/texmf/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
-(/home/jsong/texmf/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex))
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplots.scaling.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplotsticks.code.tex)
-(/home/jsong/texmf/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/numtable/pgfplotstable.coltype.c
+ode.tex)))
+(/usr/share/texmf-texlive/tex/generic/pgfplots/util/pgfplotscolormap.code.tex)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/pgfplots.stackedplots.code.tex)
+(/usr/share/texmf-texlive/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex
+) (/usr/share/texmf-texlive/tex/generic/pgfplots/pgfplotsticks.code.tex)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
 ations.code.tex
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen193
-\pgfdecoratedremainingdistance=\dimen194
-\pgfdecoratedinputsegmentcompleteddistance=\dimen195
-\pgfdecoratedinputsegmentremainingdistance=\dimen196
-\pgf@decorate@distancetomove=\dimen197
-\pgf@decorate@repeatstate=\count168
-\pgfdecorationsegmentamplitude=\dimen198
-\pgfdecorationsegmentlength=\dimen199
+\pgfdecoratedcompleteddistance=\dimen199
+\pgfdecoratedremainingdistance=\dimen200
+\pgfdecoratedinputsegmentcompleteddistance=\dimen201
+\pgfdecoratedinputsegmentremainingdistance=\dimen202
+\pgf@decorate@distancetomove=\dimen203
+\pgf@decorate@repeatstate=\count165
+\pgfdecorationsegmentamplitude=\dimen204
+\pgfdecorationsegmentlength=\dimen205
 )
-\tikz@lib@dec@box=\box59
+\tikz@lib@dec@box=\box56
 )
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
 ations.pathmorphing.code.tex
@@ -865,13 +835,13 @@ athmorphing.code.tex))
 ations.pathreplacing.code.tex
 (/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
 athreplacing.code.tex))
-\pgfplots@numplots=\count169
-\pgfplots@xmin@reg=\dimen200
-\pgfplots@xmax@reg=\dimen201
-\pgfplots@ymin@reg=\dimen202
-\pgfplots@ymax@reg=\dimen203
-\pgfplots@zmin@reg=\dimen204
-\pgfplots@zmax@reg=\dimen205
+\pgfplots@numplots=\count166
+\pgfplots@xmin@reg=\dimen206
+\pgfplots@xmax@reg=\dimen207
+\pgfplots@ymin@reg=\dimen208
+\pgfplots@ymax@reg=\dimen209
+\pgfplots@zmin@reg=\dimen210
+\pgfplots@zmax@reg=\dimen211
 )
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotm
 arks.code.tex
@@ -895,9 +865,9 @@ Package: beamerposter 2010/11/18 v.1.12 latex-beamer poster extension
 Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 
 (/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks52
-\XKV@tempa@toks=\toks53
-\XKV@depth=\count170
+\XKV@toks=\toks49
+\XKV@tempa@toks=\toks50
+\XKV@depth=\count167
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
 (/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty
@@ -910,19 +880,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texmf-texlive/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count171
+\actioncount=\count168
 )
 (/usr/share/texmf-texlive/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count172
-\FP@xia=\count173
-\FP@xib=\count174
-\FP@xfa=\count175
-\FP@xfb=\count176
-\FP@rega=\count177
-\FP@regb=\count178
-\FP@regs=\count179
-\FP@times=\count180
+\FP@xs=\count169
+\FP@xia=\count170
+\FP@xib=\count171
+\FP@xfa=\count172
+\FP@xfb=\count173
+\FP@rega=\count174
+\FP@regb=\count175
+\FP@regs=\count176
+\FP@times=\count177
 )
 (/usr/share/texmf-texlive/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -941,7 +911,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texmf-texlive/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count181
+\FPseed=\count178
 )
 (/usr/share/texmf-texlive/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1497,79 +1467,79 @@ FP debug: upn: +++ result of upn-expression is "(2.80)"
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\afterassignment' on input line 27.
+(hyperref)                removing `\afterassignment' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 27.
+(hyperref)                removing `\<def>-command' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\f@size' on input line 27.
+(hyperref)                removing `\f@size' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\afterassignment' on input line 27.
+(hyperref)                removing `\afterassignment' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 27.
+(hyperref)                removing `\<def>-command' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\f@baselineskip' on input line 27.
+(hyperref)                removing `\f@baselineskip' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 27.
+(hyperref)                removing `\<def>-command' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\f@linespread' on input line 27.
+(hyperref)                removing `\f@linespread' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 27.
+(hyperref)                removing `\<let>-command' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\baselinestretch' on input line 27.
+(hyperref)                removing `\baselinestretch' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 27.
+(hyperref)                removing `\<def>-command' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 27.
+(hyperref)                removing `\<def>-command' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\font@name' on input line 27.
+(hyperref)                removing `\font@name' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\OT1/cmss/m/n/10.95' on input line 27.
+(hyperref)                removing `\OT1/cmss/m/n/10.95' on input line 25.
 
 (./poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -1614,18 +1584,18 @@ driver: pdftex
 -----------------------
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count182
-\scratchdimen=\dimen206
-\scratchbox=\box60
-\nofMPsegments=\count183
-\nofMParguments=\count184
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count185
-\MPscratchDim=\dimen207
-\MPnumerator=\count186
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count179
+\scratchdimen=\dimen212
+\scratchbox=\box57
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen213
+\MPnumerator=\count183
+\everyMPtoPDFconversion=\toks52
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 25.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -1633,16 +1603,16 @@ Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count187
+\c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
  (./poster.out)
 (./poster.out)
-\@outlinefile=\write5
-\openout5 = `poster.out'.
+\@outlinefile=\write6
+\openout6 = `poster.out'.
 
-\AtBeginShipoutBox=\box61
+\AtBeginShipoutBox=\box58
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1668,53 +1638,75 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (./poster.nav)
+LaTeX Font Info:    Calculating math sizes for size <41.8> on input line 291.
 
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.8} into y
-our preamble.
- on input line 27.
-
-(./poster.nav) <hpo.png, id=11, 878.28125pt x 541.02126pt>
+<hpo.png, id=10, 746.79pt x 489.83pt>
 File: hpo.png Graphic file (type png)
  <use hpo.png>
-<toy_ontology.png, id=12, 596.9502pt x 186.4566pt>
+<omim_vis.png, id=11, 651.43375pt x 338.26375pt>
+File: omim_vis.png Graphic file (type png)
+ <use omim_vis.png>
+<PhenoTips.PNG, id=12, 48.16394pt x 13.34142pt>
+File: PhenoTips.PNG Graphic file (type png)
+ <use PhenoTips.PNG>
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <34.83> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 291.
+
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <50.16> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 291.
+
+
+LaTeX Font Info:    Calculating math sizes for size <50.16> on input line 291.
+<toy_ontology.png, id=14, 513.8397pt x 186.4566pt>
 File: toy_ontology.png Graphic file (type png)
  <use toy_ontology.png>
-<cluster_comparison.png, id=14, 578.16pt x 433.62pt>
+<cluster_comparison.png, id=15, 578.16pt x 433.62pt>
 File: cluster_comparison.png Graphic file (type png)
 
 <use cluster_comparison.png>
-<sim_patients.png, id=15, 462.72874pt x 402.50375pt>
+<sim_patients.png, id=16, 668.4975pt x 637.38126pt>
 File: sim_patients.png Graphic file (type png)
  <use sim_patients.png>
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./hpo.png (PNG copy)> <./t
-oy_ontology.png> <./cluster_comparison.png> <./sim_patients.png>]
-\tf@nav=\write6
-\openout6 = `poster.nav'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./hpo.png (PNG copy)> <./o
+mim_vis.png (PNG copy)> <./PhenoTips.PNG> <./toy_ontology.png (PNG copy)> <./cl
+uster_comparison.png> <./sim_patients.png>]
+\tf@nav=\write7
+\openout7 = `poster.nav'.
 
-\tf@toc=\write7
-\openout7 = `poster.toc'.
+\tf@toc=\write8
+\openout8 = `poster.toc'.
 
-\tf@snm=\write8
-\openout8 = `poster.snm'.
+\tf@snm=\write9
+\openout9 = `poster.snm'.
 
-
-(./poster.aux) ) 
+ (./poster.aux) ) 
 Here is how much of TeX's memory you used:
- 25792 strings out of 495061
- 580241 string characters out of 1182621
- 762277 words of memory out of 3000000
- 28325 multiletter control sequences out of 15000+50000
- 6994 words of font info for 25 fonts, out of 3000000 for 9000
+ 23117 strings out of 495061
+ 479408 string characters out of 1182622
+ 644843 words of memory out of 3000000
+ 25696 multiletter control sequences out of 15000+50000
+ 24432 words of font info for 96 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 50i,15n,74p,721b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss17.pfb>
-Output written on poster.pdf (1 page, 166759 bytes).
+ 49i,16n,75p,486b,1433s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmssi17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb>
+Output written on poster.pdf (1 page, 1080652 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
